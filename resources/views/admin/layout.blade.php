@@ -26,10 +26,10 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="index.html">{{$optionAppServiceProvider->name_app_option}}</a>
+                    <a href="{{url('/home')}}">{{$optionAppServiceProvider->name_app_option}}</a>
                 </div>
                 <div class="sidebar-brand sidebar-brand-sm">
-                    <a href="index.html">{{$optionAppServiceProvider->acronym_name_app_option}}</a>
+                    <a href="{{url('/home')}}">{{$optionAppServiceProvider->acronym_name_app_option}}</a>
                 </div>
                 @include('admin.navigation')
 

@@ -9,7 +9,7 @@ Dashboard
 
 <section class="section">
     <div class="section-header">
-        <h1>Modal</h1>
+        <h1>Dashboard</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item ">Dashboard</div>
 

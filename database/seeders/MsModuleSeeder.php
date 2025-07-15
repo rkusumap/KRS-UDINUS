@@ -62,7 +62,7 @@ class MsModuleSeeder extends Seeder
                 'induk_module' => '0',
                 'code_module' => 'DSH',
                 'name_module' => 'Dashboard',
-                'link_module' => 'dashboard',
+                'link_module' => 'home',
                 'description_module' => 'Halaman dashboard admin',
                 'icon_module' => 'fas fa-fire',
                 'action_module' => 'create,read,update,delete',
