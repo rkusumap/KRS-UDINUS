@@ -25,9 +25,6 @@ class AuthController
         return Validator::make($request, $rule, $pesan);
     }
 
-    // public function not_found(Request $request) {
-    //     return response()->json(['message' => 'Token not provided or invalid'], 401);
-    // }
 
     public function login(Request $request)
     {

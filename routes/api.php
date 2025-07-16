@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Api\KRSController;
 
-// Route::get('/not-found', [AuthController::class, 'not_found'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('jwt-auth')->group(function () {
