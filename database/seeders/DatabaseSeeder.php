@@ -15,10 +15,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             AdminUserSeeder::class,
-            MsLevelSeeder::class,
-            MsGroupModuleSeeder::class,
-            MsModuleSeeder::class,
-            MsOptionSeeder::class,
             KrsSeeder::class
         ]);
 
