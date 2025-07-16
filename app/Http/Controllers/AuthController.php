@@ -147,10 +147,15 @@ class AuthController extends Controller
 
     public function login_api(Request $request)
     {
-        $credentials = $request->only('email', 'password');
+        $nim_dinus = md5($request->nim_dinus);
 
-        if (!$token = JWTAuth::attempt($credentials)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+        $credentials = [
+            'nim_dinus' => $nim_dinus,
+            'password' => $request->pass_mhs,
+        ];
+
+        if (!$token = Auth::guard('api')->attempt($credentials)) {
+            return response()->json(['message' => 'NIM atau Password Salah'], 401);
         }
 
         return response()->json([

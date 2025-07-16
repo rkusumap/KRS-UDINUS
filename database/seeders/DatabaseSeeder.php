@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             MsGroupModuleSeeder::class,
             MsModuleSeeder::class,
             MsOptionSeeder::class,
+            KrsSeeder::class
         ]);
 
         // run
