@@ -8,6 +8,11 @@ krs_record , jadwal_tawar , matkul_kurikulum
 
 validasi_krs_mhs , ip_semester
 
+yang sudah beres
+krs_record
+jadwal_tawar
+matkul_kurikulum
+
 nim = A11.2022.09434
 pass = 12345678
 krs_record = untuk menyimpan KRS
