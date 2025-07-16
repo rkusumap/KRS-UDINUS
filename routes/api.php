@@ -10,5 +10,14 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware(['auth:api'])->group(function () {
     Route::post('logout', [AuthController::class, 'logout']);
-    Route::get('tes', [KRSController::class, 'tes']);
+
+    Route::prefix('v1/students/{nim}')->group(function() {
+        Route::get('/courses/available', [KRSController::class, 'courses_available']);
+        Route::prefix('krs')->group(function() {
+            Route::get('/current', [KRSController::class, 'krs_current']);
+            Route::get('/status', [KRSController::class, 'krs_status']);
+            Route::post('/courses', [KRSController::class, 'krs_courses']);
+            Route::delete('/courses/{schedule_id}', [KRSController::class, 'krs_courses_delete']);
+        });
+    });
 });
