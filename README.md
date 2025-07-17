@@ -72,6 +72,15 @@ Tata cara untuk mengakses endpoint berikut:
 | `nim`      | text | A11.2022.09434 |
 | `password` | text | 12345678       |
 
+### RESPONSE
+```
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzMwMTk2LCJleHAiOjE3NTI3MzM3OTYsIm5iZiI6MTc1MjczMDE5NiwianRpIjoiWEpQMklKQ1VFYU5Ta3VzciIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.GfNmxKntSfGK3ZCg7RC5e2eKtSPX2W6IBlMKrp4cD2M",
+    "token_type": "bearer",
+    "expires_in": 3600
+}
+```
+
 ### 🔓 Logout
 
 **POST** `/api/logout`
