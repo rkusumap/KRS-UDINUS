@@ -58,7 +58,8 @@ Sistem Kartu Rencana Studi (KRS) Mahasiswa berbasis Laravel REST API.
 
 ## 🚀 API Usage
 
-Gunakan tools seperti Postman, curl, atau HTTP client lainnya untuk mengakses endpoint berikut:
+Import file "Tes Udinus New.postman_collection.json" pada Postman anda.
+Tata cara untuk mengakses endpoint berikut:
 
 ### 🔐 Login
 

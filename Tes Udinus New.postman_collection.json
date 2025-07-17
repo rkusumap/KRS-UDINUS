@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "3150a14a-54ac-4a1f-ab95-6f4cb9497144",
+		"name": "Tes Udinus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44858890",
+		"_collection_link": "https://kusuma-1011771.postman.co/workspace/Kusuma's-Workspace~f004ddea-76a0-4a69-8ed4-59bf3aa56cda/collection/44858890-3150a14a-54ac-4a1f-ab95-6f4cb9497144?action=share&source=collection_link&creator=44858890"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nim",
+							"value": "A11.2022.09434",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNjcxNTU5LCJleHAiOjE3NTI2NzUxNTksIm5iZiI6MTc1MjY3MTU1OSwianRpIjoibzBPMWtBSUdla2NqalRCQyIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.Yr79PYrCffCoCmV5aaTfrUY137bYrXbcQuOxDONGe4s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student KRS Overview",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzE0NzYyLCJleHAiOjE3NTI3MTgzNjIsIm5iZiI6MTc1MjcxNDc2MiwianRpIjoiOFhUS0N2SmFPQmZhT0JMSSIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.eYzHpHWzrgisRWYqiJSwHAbDihiOsaFPI1W9mOfqd30",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/students/A11.2022.09434/krs/current",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"A11.2022.09434",
+						"krs",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Available Courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzE4NTY1LCJleHAiOjE3NTI3MjIxNjUsIm5iZiI6MTc1MjcxODU2NSwianRpIjoiV1l6RFZoU0FwY3h5Ym5WMiIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.lfSzGcb9h4xR43dS6GcUU23n7ZD__3rEEioZHglTYTw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/students/A11.2022.09434/courses/available",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"A11.2022.09434",
+						"courses",
+						"available"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KRS Course Registration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzI2Mjk4LCJleHAiOjE3NTI3Mjk4OTgsIm5iZiI6MTc1MjcyNjI5OCwianRpIjoiSVd3YnNvRVpqT3RJY00ySyIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.Y6itaGdMlNDnfG4y9hd5Zt2vrzo1GFGpBic1fc_DMT4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_jadwal",
+							"value": "275233",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/students/A11.2022.09434/krs/courses",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"A11.2022.09434",
+						"krs",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KRS Course Removal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzI2Mjk4LCJleHAiOjE3NTI3Mjk4OTgsIm5iZiI6MTc1MjcyNjI5OCwianRpIjoiSVd3YnNvRVpqT3RJY00ySyIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.Y6itaGdMlNDnfG4y9hd5Zt2vrzo1GFGpBic1fc_DMT4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/students/A11.2022.09434/krs/courses/275233",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"A11.2022.09434",
+						"krs",
+						"courses",
+						"275233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student KRS Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzUyNzI3NDQ2LCJleHAiOjE3NTI3MzEwNDYsIm5iZiI6MTc1MjcyNzQ0NiwianRpIjoiQzNaeXFXNlMydHdKVk14ZiIsInN1YiI6IjEiLCJwcnYiOiI3ZTdhMWIyZDE0NDQ4YTY2NDZlZDU0ZjMyNWNiMDg5MTE3Y2U5OGUzIn0.8UxMXSb3q2cYsoqS9rjM6NpaFPmEuatytdMYGSl-tf0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/students/A11.2022.09434/krs/status",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"A11.2022.09434",
+						"krs",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
