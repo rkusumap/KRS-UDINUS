@@ -1,12 +1,10 @@
-krs_record , jadwal_tawar , matkul_kurikulum
-
- , daftar_nilai ,
-
- ,  ,
-
- ,
-
-validasi_krs_mhs , ip_semester
+List DB
+krs_record
+jadwal_tawar
+matkul_kurikulum
+daftar_nilai
+validasi_krs_mhs
+ip_semester
 
 yang sudah beres
 krs_record
