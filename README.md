@@ -85,13 +85,49 @@ Authorization: Bearer {token}
 
 **GET** `/api/v1/students/{nim}/krs/current`
 
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+Catatan
+
+```
+Rubah {nim} jadi A11.2022.09434
+```
+
 ### 📋 Daftar Mata Kuliah Tersedia
 
 **GET** `/api/v1/students/{nim}/courses/available`
 
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+Catatan
+
+```
+Rubah {nim} jadi A11.2022.09434
+```
+
 ### ➕ Tambah Mata Kuliah KRS
 
 **POST** `/api/v1/students/{nim}/krs/courses`
+
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+Catatan
+
+```
+Rubah {nim} jadi A11.2022.09434
+```
 
 #### Body:
 
@@ -103,9 +139,33 @@ Authorization: Bearer {token}
 
 **DELETE** `/api/v1/students/{nim}/krs/courses/{id_jadwal}`
 
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+Catatan
+
+```
+Rubah {nim} jadi A11.2022.09434
+```
+
 ### 📘 Status KRS Mahasiswa
 
 **GET** `/api/v1/students/{nim}/krs/status`
+
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+Catatan
+
+```
+Rubah {nim} jadi A11.2022.09434
+```
 
 ## 🧑‍💻 Kontributor
 
