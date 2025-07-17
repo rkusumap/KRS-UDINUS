@@ -1,61 +1,116 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# KRS UDINUS API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Kartu Rencana Studi (KRS) Mahasiswa berbasis Laravel REST API.
 
-## About Laravel
+## ✅ Persyaratan
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- PHP **8.3**
+- MySQL **5.7+ / 8.0+**
+- Composer versi terbaru sudah terinstall
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Instalasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Clone repository ini**
 
-## Learning Laravel
+   ```bash
+   git clone https://github.com/username/krs-udinus.git
+   cd krs-udinus
+   ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. **Copy file environment**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+   ```bash
+   cp .env.example .env
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. \*\*Atur konfigurasi database di \*\*\`\`
 
-## Laravel Sponsors
+   ```dotenv
+   DB_DATABASE=krs_udinus
+   DB_USERNAME=root
+   DB_PASSWORD=your_password
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. **Install dependency Laravel**
 
-### Premium Partners
+   ```bash
+   composer install
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+5. **Import database**
 
-## Contributing
+   - Import file `krs_udinus.sql` ke database MySQL Anda menggunakan phpMyAdmin atau command line:
+     ```bash
+     mysql -u root -p krs_udinus < krs_udinus.sql
+     ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. **Generate application key**
 
-## Code of Conduct
+   ```bash
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7. **Jalankan server lokal**
 
-## Security Vulnerabilities
+   ```bash
+   php artisan serve
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 API Usage
 
-## License
+Gunakan tools seperti Postman, curl, atau HTTP client lainnya untuk mengakses endpoint berikut:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 🔐 Login
+
+**POST** `/api/login`
+
+#### Body (x-www-form-urlencoded / JSON):
+
+| Field      | Type | Contoh         |
+| ---------- | ---- | -------------- |
+| `nim`      | text | A11.2022.09434 |
+| `password` | text | 12345678       |
+
+### 🔓 Logout
+
+**POST** `/api/logout`
+
+Gunakan header berikut:
+
+```
+Authorization: Bearer {token}
+```
+
+### 📚 Lihat KRS Mahasiswa Saat Ini
+
+**GET** `/api/v1/students/{nim}/krs/current`
+
+### 📋 Daftar Mata Kuliah Tersedia
+
+**GET** `/api/v1/students/{nim}/courses/available`
+
+### ➕ Tambah Mata Kuliah KRS
+
+**POST** `/api/v1/students/{nim}/krs/courses`
+
+#### Body:
+
+| Field       | Type | Contoh |
+| ----------- | ---- | ------ |
+| `id_jadwal` | text | 275233 |
+
+### ❌ Hapus Mata Kuliah dari KRS
+
+**DELETE** `/api/v1/students/{nim}/krs/courses/{id_jadwal}`
+
+### 📘 Status KRS Mahasiswa
+
+**GET** `/api/v1/students/{nim}/krs/status`
+
+## 🧑‍💻 Kontributor
+
+- [Nama Kamu] - Pengembang Utama
+
+## 📄 Lisensi
+
+Proyek ini berada di bawah lisensi MIT.
