@@ -241,6 +241,106 @@ Catatan
 ```
 Rubah {nim} jadi A11.2022.09434
 ```
+### Responses
+```
+{
+    "success": true,
+    "message": "Success",
+    "data": {
+        "list": [
+            {
+                "id": 275232,
+                "ta": 20232,
+                "kdmk": "A11.64201",
+                "klpk": "A11.4201",
+                "klpk_2": null,
+                "kdds": 1639,
+                "kdds2": 0,
+                "jmax": 40,
+                "jsisa": 40,
+                "id_hari1": 2,
+                "id_hari2": 0,
+                "id_hari3": 0,
+                "id_sesi1": 2,
+                "id_sesi2": 0,
+                "id_sesi3": 0,
+                "id_ruang1": 464,
+                "id_ruang2": 0,
+                "id_ruang3": 0,
+                "jns_jam": 3,
+                "open_class": 1,
+                "add_permission": true,
+                "matkul_kurikulum": {
+                    "kur_id": 130,
+                    "kdmk": "A11.64201",
+                    "nmmk": "MATRIKS DAN RUANG VEKTOR ",
+                    "nmen": "Matrices and Vector Spaces",
+                    "tp": "T",
+                    "sks": 3,
+                    "sks_t": 3,
+                    "sks_p": 0,
+                    "smt": 2,
+                    "jns_smt": 2,
+                    "aktif": 1,
+                    "kur_nama": "A11.KUR.2023/2024",
+                    "kelompok_makul": "MKK",
+                    "kur_aktif": 1,
+                    "jenis_matkul": "wajib"
+                }
+            },
+            {
+                "id": 275233,
+                "ta": 20232,
+                "kdmk": "A11.64201",
+                "klpk": "A11.4202",
+                "klpk_2": null,
+                "kdds": 1613,
+                "kdds2": 0,
+                "jmax": 40,
+                "jsisa": 39,
+                "id_hari1": 3,
+                "id_hari2": 0,
+                "id_hari3": 0,
+                "id_sesi1": 2,
+                "id_sesi2": 0,
+                "id_sesi3": 0,
+                "id_ruang1": 464,
+                "id_ruang2": 0,
+                "id_ruang3": 0,
+                "jns_jam": 3,
+                "open_class": 1,
+                "add_permission": true,
+                "matkul_kurikulum": {
+                    "kur_id": 130,
+                    "kdmk": "A11.64201",
+                    "nmmk": "MATRIKS DAN RUANG VEKTOR ",
+                    "nmen": "Matrices and Vector Spaces",
+                    "tp": "T",
+                    "sks": 3,
+                    "sks_t": 3,
+                    "sks_p": 0,
+                    "smt": 2,
+                    "jns_smt": 2,
+                    "aktif": 1,
+                    "kur_nama": "A11.KUR.2023/2024",
+                    "kelompok_makul": "MKK",
+                    "kur_aktif": 1,
+                    "jenis_matkul": "wajib"
+                }
+            }
+        ],
+        "current_page": 1,
+        "last_page": 205,
+        "per_page": 2,
+        "total": 410,
+        "change_page": "?page=number",
+        "change_item_per_page": "?per_page=number",
+        "change_first_page": "?page=1",
+        "change_next_page": "?page=2",
+        "change_last_page": "?page=205"
+    }
+}
+```
 
 ### ➕ Tambah Mata Kuliah KRS
 
@@ -264,6 +364,118 @@ Rubah {nim} jadi A11.2022.09434
 | ----------- | ---- | ------ |
 | `id_jadwal` | text | 275233 |
 
+### Responses
+```
+{
+    "success": true,
+    "message": "Success",
+    "data": {
+        "krs_record": [
+            {
+                "id": 3991974,
+                "ta": "20241",
+                "kdmk": "A11.64405",
+                "id_jadwal": 275457,
+                "nim_dinus": "b08df36d75bdaba20d68c50da73f5aa0",
+                "sts": "B",
+                "sks": 3,
+                "modul": 0,
+                "allow_uji": 0,
+                "jadwal_tawar": {
+                    "id": 275457,
+                    "ta": 20232,
+                    "kdmk": "A11.64405",
+                    "klpk": "A11.4404",
+                    "klpk_2": null,
+                    "kdds": 1008,
+                    "kdds2": 0,
+                    "jmax": 40,
+                    "jsisa": 40,
+                    "id_hari1": 4,
+                    "id_hari2": 0,
+                    "id_hari3": 0,
+                    "id_sesi1": 12,
+                    "id_sesi2": 0,
+                    "id_sesi3": 0,
+                    "id_ruang1": 467,
+                    "id_ruang2": 0,
+                    "id_ruang3": 0,
+                    "jns_jam": 3,
+                    "open_class": 1
+                },
+                "matkul_kurikulum": {
+                    "kur_id": 125,
+                    "kdmk": "A11.64405",
+                    "nmmk": "PEMBELAJARAN MESIN",
+                    "nmen": "Machine Learning",
+                    "tp": "T",
+                    "sks": 3,
+                    "sks_t": 3,
+                    "sks_p": 0,
+                    "smt": 4,
+                    "jns_smt": 2,
+                    "aktif": 1,
+                    "kur_nama": "Z11.KUR.2021/2022",
+                    "kelompok_makul": "MKK",
+                    "kur_aktif": 1,
+                    "jenis_matkul": "wajib"
+                }
+            },
+            {
+                "id": 3991978,
+                "ta": "20241",
+                "kdmk": "A11.64201",
+                "id_jadwal": 275233,
+                "nim_dinus": "b08df36d75bdaba20d68c50da73f5aa0",
+                "sts": "B",
+                "sks": 3,
+                "modul": 0,
+                "allow_uji": 0,
+                "jadwal_tawar": {
+                    "id": 275233,
+                    "ta": 20232,
+                    "kdmk": "A11.64201",
+                    "klpk": "A11.4202",
+                    "klpk_2": null,
+                    "kdds": 1613,
+                    "kdds2": 0,
+                    "jmax": 40,
+                    "jsisa": 38,
+                    "id_hari1": 3,
+                    "id_hari2": 0,
+                    "id_hari3": 0,
+                    "id_sesi1": 2,
+                    "id_sesi2": 0,
+                    "id_sesi3": 0,
+                    "id_ruang1": 464,
+                    "id_ruang2": 0,
+                    "id_ruang3": 0,
+                    "jns_jam": 3,
+                    "open_class": 1
+                },
+                "matkul_kurikulum": {
+                    "kur_id": 130,
+                    "kdmk": "A11.64201",
+                    "nmmk": "MATRIKS DAN RUANG VEKTOR ",
+                    "nmen": "Matrices and Vector Spaces",
+                    "tp": "T",
+                    "sks": 3,
+                    "sks_t": 3,
+                    "sks_p": 0,
+                    "smt": 2,
+                    "jns_smt": 2,
+                    "aktif": 1,
+                    "kur_nama": "A11.KUR.2023/2024",
+                    "kelompok_makul": "MKK",
+                    "kur_aktif": 1,
+                    "jenis_matkul": "wajib"
+                }
+            }
+        ]
+    }
+}
+```
+
 ### ❌ Hapus Mata Kuliah dari KRS
 
 **DELETE** `/api/v1/students/{nim}/krs/courses/{id_jadwal}`
@@ -278,6 +490,14 @@ Catatan
 
 ```
 Rubah {nim} jadi A11.2022.09434
+```
+### Responses
+```
+{
+    "success": true,
+    "message": "Success",
+    "data": null
+}
 ```
 
 ### 📘 Status KRS Mahasiswa
@@ -294,6 +514,18 @@ Catatan
 
 ```
 Rubah {nim} jadi A11.2022.09434
+```
+### Responses
+```
+{
+    "success": true,
+    "message": "Success",
+    "data": {
+        "status_validasi_krs_mhs": false,
+        "sks": "85",
+        "ips": "3.10"
+    }
+}
 ```
 
 ## 🧑‍💻 Kontributor
