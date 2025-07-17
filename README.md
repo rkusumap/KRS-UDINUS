@@ -109,7 +109,7 @@ Authorization: Bearer {token}
 
 ## 🧑‍💻 Kontributor
 
-- [Nama Kamu] - Pengembang Utama
+- Radhitya Kusuma Perkasa - Pengembang Utama
 
 ## 📄 Lisensi
 
